@@ -12,3 +12,9 @@ Plongez dans la sécurité avec FishGuard, la solution de pointe on-premise pour
 6. **Interface Simple et Intuitive :** Une interface conviviale spécialement conçue pour les administrateurs système, facilitant la gestion des signalements et des menaces.
 7. **Système de Faux Positif :** Intègre un mécanisme avancé de reconnaissance des faux positifs pour minimiser les erreurs dans le processus de détection.
 8. **Système de Blocage de Mail :** Capacité à bloquer les mails identifiés comme potentiellement dangereux, assurant une protection proactive contre les menaces de phishing.
+
+## **Fonctionnalités futures :**
+
+1. **Système Communautaire :** Permet aux utilisateurs de signaler des adresses e-mail malveillantes, contribuant ainsi à la constitution d'une liste noire partagée.
+
+2. **Intégration d'une IA :** Intégration d'une intelligence artificielle pour détecter les fautes, les liens non sécurisés, les typosquatting, les langues étrangères, et d'autres indicateurs de tentatives de phishing avancées. Renforce la capacité de détection et réduit les risques liés aux attaques sophistiquées.
