@@ -1,0 +1,245 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Arial', sans-serif;
+    background-color: #f0f0f0;
+    color: #333;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.dark-mode body {
+    background-color: #333;
+    color: #fff;
+}
+
+.dashboard-container {
+    display: flex;
+    min-height: 100vh;
+}
+
+.sidebar {
+    background-color: #512da8;
+    color: #fff;
+    padding: 20px;
+    min-width: 200px;
+    transition: background-color 0.3s;
+}
+
+.dark-mode .sidebar {
+    background-color: #333;
+}
+
+.sidebar h1 {
+    font-size: 1.5em;
+    margin-bottom: 20px;
+}
+
+.sidebar ul {
+    list-style: none;
+    padding: 0;
+}
+
+.sidebar li {
+    margin-bottom: 10px;
+}
+
+.sidebar a {
+    text-decoration: none;
+    color: #fff;
+    display: block;
+    padding: 10px;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+}
+
+.sidebar a:hover {
+    background-color: #7c4dff;
+}
+
+.sidebar a.active {
+    background-color: #7c4dff;
+}
+
+.sidebar i {
+    margin-right: 10px;
+}
+
+.content {
+    flex: 1;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: background-color 0.3s;
+}
+
+.dark-mode .content {
+    background-color: #444;
+}
+
+.header {
+    background-color: #512da8;
+    padding: 20px;
+    text-align: center;
+    color: #fff;
+    border-radius: 10px 10px 0 0;
+}
+
+.dark-mode .header {
+    background-color: #333;
+}
+
+.dashboard-squares {
+    display: flex;
+    gap: 20px;
+    justify-content: space-between;
+    margin-top: 20px;
+}
+
+.dashboard-square {
+    flex: 1;
+}
+
+.dashboard-card {
+    background-color: #f0f0f0;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+.dark-mode .dashboard-card {
+    background-color: #555;
+    color: #fff;
+}
+
+.dashboard-card h2 {
+    color: #512da8;
+    margin-bottom: 10px;
+}
+
+.dark-mode .dashboard-card h2 {
+    color: #fff;
+}
+
+.dashboard-card p {
+    color: #333;
+    margin: 0;
+}
+
+.dark-mode .dashboard-card p {
+    color: #ddd;
+}
+
+.charts-container {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+}
+
+.chart {
+    flex: 1;
+    height: 300px;
+    background-color: #f0f0f0;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin: 0 10px;
+}
+
+.dark-mode .chart {
+    background-color: #555;
+    color: #fff;
+}
+
+.dark-mode-switch {
+    cursor: pointer;
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    display: flex;
+    align-items: center;
+    color: #fff;
+    font-size: 1.5em;
+}
+
+.dark-mode-switch i {
+    margin: 0 5px;
+}
+
+.dark-mode .dark-mode-switch {
+    color: #512da8;
+}
+
+.dark-mode .dark-mode-switch i {
+    color: #512da8;
+}
+
+:root {
+    --light: #d8dbe0;
+    --dark: #28292c;
+    --link: rgb(27, 129, 112);
+    --link-hover: rgb(24, 94, 82);
+  }
+
+/* Your existing styles.css content */
+
+/* Add the provided CSS for the dark/light mode toggle switch */
+.toggle-switch {
+    position: fixed;
+    bottom: 20px;
+    left: 20px;  /* Adjusted position to bottom left */
+    display: flex;
+    align-items: center;
+    font-size: 14px;
+}
+
+.toggle-switch label {
+    position: relative;
+    width: 40px; /* Maintain the original width */
+    height: 26px;
+    background-color: #ffffff;
+    border-radius: 13px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 5px; /* Adjusted padding */
+}
+
+.toggle-switch input {
+    display: none;
+}
+
+.toggle-switch .slider {
+    position: absolute;
+    top: 2px;
+    left: 2px;
+    width: 22px; /* Adjusted width to a smaller size */
+    height: 22px;
+    background-color: #512da8;
+    border-radius: 50%;
+    transition: 0.3s;
+}
+
+.toggle-switch input:checked + .slider {
+    transform: translateX(24px);
+}
+
+.toggle-switch a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 12px;
+    opacity: 0.7;
+    transition: opacity 0.3s;
+}
+
+.toggle-switch a:hover {
+    opacity: 1;
+}
+
+/* Additional styles for the sun and moon icons */
+.toggle-switch i {
+    color: #3a3a3a;
+    font-size: 14px; /* Adjusted size */
+    margin: 0; /* Removed margin */
+}

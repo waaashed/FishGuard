@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
+    <title>FishGuard</title>
+
+    <!-- Include Chart.js library -->
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+<body>
+    <div class="dashboard-container">
+        <div class="sidebar">
+            <h1><i class="fas fa-chart-line"></i> Dashboard</h1>
+            <ul>
+                <li><a href="#" class="active"><i class="fas fa-home"></i> Menu</a></li>
+                <li><a href="#"><i class="fas fa-chart-bar"></i> Analytique</a></li>
+                <li><a href="#"><i class="fas fa-file-alt"></i> Rapports</a></li>
+                <li><a href="#"><i class="fas fa-cogs"></i> Paramètres</a></li>
+            </ul>
+        </div>
+        <div class="content">
+            <div class="header">
+                <h1>Bienvenue sur la page de FishGuard</h1>
+            </div>
+            <div class="dashboard-squares">
+                <!-- Your existing dashboard content here -->
+            </div>
+            <div class="charts-container">
+                <div class="chart" id="chart1"></div>
+                <div class="chart" id="chart2"></div>
+            </div>
+        </div>
+    </div>
+
+    <div class="toggle-switch">
+        <label>
+            <input type="checkbox" id="darkModeToggle">
+            <span class="slider"></span>
+            <i class="fas fa-sun"></i> <!-- Sun icon -->
+            <i class="fas fa-moon"></i> <!-- Moon icon -->
+        </label>
+        </a>
+    </div>
+
+    <script src="scripts.js"></script>
+</body>
+</html>
