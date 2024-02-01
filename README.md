@@ -1,4 +1,7 @@
-![Fishguard Image](/assets/fishguard.png)
+<p align="center">
+  <img src="/assets/fishguard.png" alt="Fishguard Image">
+</p>
+
 
 # FishGuard 🐟🔒
 
